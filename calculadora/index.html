@@ -4,6 +4,7 @@
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script type="text/javascript" src="/home/moises/Desktop/js_projects/Calculator_JS/calculadora/script.js"></script>
 
     <style>
       .calculadora {
@@ -94,32 +95,7 @@
     </div>  
     
     
-    <script>
-      //Lógica dentro da calculadora
-      var resultado
-      function calcular(tipo, valor){
-        
-        
-        if(tipo === 'acao'){
-            
-          if(valor === 'c'){
-
-            document.getElementById('resultado').value = ''
-
-          }else if(valor === '+'|| valor === '-' || valor === '*' || valor === '/' || valor ==='.'){
-            document.getElementById('resultado').value += valor
-          }else if(valor === '='){
-            var resultadofinal = document.getElementById('resultado').value
-            document.getElementById('resultado').value = eval(resultadofinal)
-          }
-          
-
-        }else if(tipo == 'valor'){
-          document.getElementById('resultado').value += valor
-        }
-       
-      }      
-    </script>
+    
   </body>	
 
 </html>
